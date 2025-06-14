@@ -26,10 +26,10 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ThirdMultiSheetParallelWriter {
 
     // 테스트 설정
-    private static final int COLUMN_COUNT = 30;
-    private static final int ROW_COUNT = 2_000_000; // 총 행의 수
+    private static final int COLUMN_COUNT = 70;
+    private static final int ROW_COUNT = 1_000_000;
     private static final int SHEET_THRESHOLD = 1_000_000; // 시트 당 행 개수 제한
-    private static final int[] THREAD_COUNTS = {1, 2}; // 테스트할 소비자 스레드 수
+    private static final int[] THREAD_COUNTS = {3, 4}; // 테스트할 소비자 스레드 수
     private static final boolean[] USE_MULTI_SHEET = {false, true}; // 단일 시트 vs 다중 시트
     private static final String OUTPUT_DIR = "excel_test_results";
     private static final int QUEUE_THRESHOLD = 100_000; // 데이터 큐 최대 크기
