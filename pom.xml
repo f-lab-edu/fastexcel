@@ -12,6 +12,7 @@
         <module>fastexcel-writer</module>
         <module>fastexcel-reader</module>
         <module>e2e</module>
+        <module>opczip</module>
     </modules>
 
     <name>Fastexcel Project</name>
